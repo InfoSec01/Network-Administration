@@ -1,4 +1,6 @@
-# 🏢 Enterprise Network Infrastructure: A Real-World VLAN and Routing Lab
+<div align="center">
+<h1># 🏢 Enterprise Network Infrastructure: A Real-World VLAN and Routing Lab</h1>
+</div>
 
 > **"Designing networks isn't just about connectivity — it's about accountability, security, and scaling with confidence."**
 
@@ -63,6 +65,9 @@ To build and secure a multi-department enterprise network, ensuring:
 ## 🖼️ Network Topology
 
 Here is the network topology of several projects:
-
+> 🔽 **Screenshots:**
+<img src="https://github.com/InfoSec01/Network-Administration/blob/main/Topology%20-%20Installing%20and%20Configuring%20Routers.png"/>
+<img src="https://github.com/InfoSec01/Network-Administration/blob/main/Topology%20-%20Designing%20Implementing%20Logical%20Networks%20.png"/>
+<img src="https://github.com/InfoSec01/Network-Administration/blob/main/Topology%20-%20Analyzing%20Troubleshooting%20Network%20Traffic%20Connectivity.png"/>
 
 ---
