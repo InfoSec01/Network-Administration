@@ -64,7 +64,5 @@ To build and secure a multi-department enterprise network, ensuring:
 
 Here is the network topology of several projects:
 
+
 ---
-
-## 📁 Repository Structure
-
