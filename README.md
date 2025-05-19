@@ -74,7 +74,7 @@ Here is the network topology of several projects:
 
 I bring not only technical ability, but a deep understanding of operational impact. I build systems that work—securely, efficiently, and resiliently.
 
-📬 **Contact me if your organization needs someone who can walk the talk in System, Linux, and Network Administration.**
+📬 **Contact me if your organization needs someone who can walk the talk in System, Security, Linux, and Network Administration.**
 - baratulkhan@gmail.com
 
 ---
