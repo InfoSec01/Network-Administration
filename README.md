@@ -66,9 +66,15 @@ To build and secure a multi-department enterprise network, ensuring:
 
 Here is the network topology of several projects:
 > 🔽 **Screenshots:**
-<img src="https://github.com/InfoSec01/Network-Administration/blob/main/Topology%20-%20Installing%20and%20Configuring%20Routers.png" width="75%"/>
-<img src="https://github.com/InfoSec01/Network-Administration/blob/main/Topology%20-%20Designing%20Implementing%20Logical%20Networks%20.png" width="75%"/>
-<img src="https://github.com/InfoSec01/Network-Administration/blob/main/Topology%20-%20Analyzing%20Troubleshooting%20Network%20Traffic%20Connectivity.png" width="75%"/>
+<img src="https://github.com/InfoSec01/Network-Administration/blob/main/Topology%20-%20Installing%20and%20Configuring%20Routers.png" width="70%"/>
+<img src="https://github.com/InfoSec01/Network-Administration/blob/main/Topology%20-%20Designing%20Implementing%20Logical%20Networks%20.png" width="70%"/>
+<img src="https://github.com/InfoSec01/Network-Administration/blob/main/Topology%20-%20Analyzing%20Troubleshooting%20Network%20Traffic%20Connectivity.png" width="70%"/>
+
+## 🖼️ Wireshark Capture and IP Forwarding
+> 🔽 **Screenshots:**
+<img src="https://github.com/InfoSec01/Network-Administration/blob/main/hr-it-forwarding-vlan.png" width="60%"/>
+<img src="https://github.com/InfoSec01/Network-Administration/blob/main/icpm-capture-wireshark.png" width="60%"/>
+<img src="https://github.com/InfoSec01/Network-Administration/blob/main/arp-capture-wireshark.png" width="60%"/>
 
 ## 🚀 Let’s Work Together
 
