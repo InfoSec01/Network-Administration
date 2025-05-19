@@ -1,91 +1,70 @@
-<div align="center">
-  <h1>🧠 Network Administration: Real-World GNS3 Lab</h1>
-  <h3>🔧 VLANs, IP Routing, ACLs, NAT, and Interdepartmental Network Segmentation</h3>
-</div>
+# 🏢 Enterprise Network Infrastructure: A Real-World VLAN and Routing Lab
 
-## 📁 Project Overview
+> **"Designing networks isn't just about connectivity — it's about accountability, security, and scaling with confidence."**
 
-This project simulates a real-world corporate network for "Phoenix Corp" using GNS3. It includes VLAN configuration, IP addressing, switch and router setup, NAT, ACLs, and inter-VLAN routing for departments: HR, IT, and Sales.
+Welcome to a hands-on project that mirrors the demands of a real-world enterprise network. This lab was engineered not for certification, but for **production-grade readiness** — simulating how companies protect, segment, and manage their internal network environments using VLANs, ACLs, inter-VLAN routing, and NAT.  
 
----
-
-## 🖥️ Network Topology
-
-- **3 Departments**: HR (Green), IT (Light Green), Sales (Blue)
-- **2 Layer 2 Switches** connecting all PCs
-- **Router for Inter-VLAN routing and NAT**
-- **12 VPCS Nodes** distributed equally across departments
+Built entirely in **GNS3**, this is more than a lab — it's a **proof-of-skill**.
 
 ---
 
-## 🧩 Network Design Summary
+## 🚀 Project Overview
 
-| Department | VLAN Tag | Subnet | VPCS Assigned |
-|------------|----------|--------|----------------|
-| HR         | 10       | 192.168.2.0/24 | PC1–PC4 |
-| IT         | 20       | 192.168.1.0/24 | PC5–PC8 |
-| Sales      | 30       | 192.168.3.0/24 | PC9–PC12 |
+**Objective:**  
+To build and secure a multi-department enterprise network, ensuring:
+- Segmentation between departments  
+- Controlled access and communication  
+- Internet simulation with NAT and DNS testing  
+- Troubleshooting capabilities for real-world issues  
 
-Switches and ports are configured per VLAN, and inter-switch trunking is set up on port 12.
-
----
-
-## 🔧 Key Configuration Steps
-
-### 🛠️ Switch Configuration
-- VLANs created and assigned (tags 10, 20, 30)
-- Ports mapped to appropriate VLANs
-- Trunk link established between switches
-
-### 🌐 IP Addressing
-Each PC manually configured with appropriate IP address.
-
-### 🌍 Inter-VLAN Routing
-- Router configured with interfaces for each VLAN
-- Gateway addresses set for all PCs
-- Routing and NAT enabled
-
-### 🔒 Access Control Lists
-- Permit/deny traffic between departments
-- Specific source/destination ACLs implemented
+**Simulated Company Departments:**  
+- 📁 **Human Resources (HR)**  
+- 🖥️ **Information Technology (IT)**  
+- 📦 **Sales**
 
 ---
 
-## 🧪 Testing & Verification
+## 🧩 Architecture at a Glance
 
-✅ Successful Pings within same VLAN  
-❌ Inter-VLAN ping blocked (until routing enabled)  
-✅ ACL applied to selectively allow/block traffic  
-✅ NAT rules configured and verified  
-✅ Wireshark used for ARP & ICMP packet capture  
-✅ DNS resolution and traceroutes for external domains (`amazon.com`, `twitter.com`, `youtube.com`)
-
----
-
-## 📸 Screenshots
-
-<img src="images/topology.png" width="700" />
-<img src="images/vlan-config.png" width="700" />
+- 🧑‍💻 **12 VPCS Hosts** – 4 per department  
+- 🧠 **2 Extreme EXOS Switches** – VLANs, Trunks, ACLs  
+- 🌐 **VyOS Router** – Inter-VLAN Routing, NAT, Gateway  
+- 🧪 **Wireshark Integration** – Live traffic analysis  
+- ⚙️ **Private DNS & Internet Simulation**
 
 ---
 
-## 📚 Tools Used
-- **GNS3**
-- **VyOS Router**
-- **ExtremeXOS Switches**
-- **VPCS**
-- **Wireshark**
+## 🛠️ Network Design Highlights
+
+### 🔹 VLANs & Trunking
+- VLAN 10: HR  
+- VLAN 20: IT  
+- VLAN 30: Sales  
+- Configured on both switches with 802.1Q trunking to ensure seamless VLAN propagation across infrastructure.
+
+### 🔸 Inter-VLAN Routing
+- Enabled selectively on VyOS to allow **controlled communication** between departments.  
+- ACLs block unauthorized cross-department access.
+
+### 🔐 Access Control Lists (ACLs)
+- Enforced on switches to limit traffic between specific VLANs.  
+- Simulates **Zero Trust** policies — users access only what they are permitted to.
+
+### 🌍 NAT & DNS
+- VyOS performs **Source NAT** so internal hosts can simulate reaching external resources.  
+- DNS tests (e.g., `nslookup amazon.com`, `tracert`) validate routing and name resolution.
+
+### 🧰 Troubleshooting & Validation
+- Live diagnostics using:
+  - `ping`, `tracert`, `ipconfig`, `arp`, `nslookup`  
+  - Wireshark captures to analyze real packet flow
+- Intentional misconfigurations tested and resolved to reflect real IT operational challenges.
+
+## 🖼️ Network Topology
+
+Here is the network topology of several projects:
 
 ---
 
-## ✅ Project Status
-**Completed** – Network segmented by departments, routed, and secured with ACLs and NAT.
-
----
-
-## 🧠 Lessons Learned
-- VLAN and switch port mapping
-- Inter-VLAN routing configuration
-- Creating and applying ACLs
-- Real-world simulation of enterprise networking scenarios
+## 📁 Repository Structure
 
